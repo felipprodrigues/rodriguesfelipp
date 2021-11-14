@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
 import '../scss/main.css';
 
-class App extends React.Component {
+class App extends Component {
   render() {
     return (
       <div className="catch-of-the-day">
