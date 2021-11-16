@@ -1,9 +1,11 @@
 import React from 'react';
+import Header from './Header';
+import '../styles/container.scss';
 
-const Container = () => (
-  <div>
-    <h2>Not Found!?!!!!1111</h2>
-  </div>
-)
+const Container = () => {
+  return (
+    <Header />
+  )
+}
 
-export default Container;
+export default Container
