@@ -1,10 +1,10 @@
 import React, { Fragment } from 'react';
-import colors from './colors';
 import '../styles/breakpoints.scss';
 import '../styles/header.scss';
 import '../styles/inputs.scss';
 import profilePicture from '../assets/profile.png';
 import defs from '../assets/defs.svg'
+import { HeaderEl } from '../styles/OverallStyles'
 
 const Header = () => {
   function toggleDark() {
@@ -38,7 +38,7 @@ const Header = () => {
   return (
     <Fragment>
 
-      <div className="header">
+      <HeaderEl>
         <label for="checkbox" className="switch" onClick={toggleDark}>
           <input type="checkbox" id="switch__checkbox" className="switch__checkbox"></input>
           <span className="switch__checkmark checkmark">
@@ -64,7 +64,7 @@ const Header = () => {
           <h1 className="header__name">Felipe Rodrigues</h1>
           <span className="header__subtitle">Frontend Developer</span>
         </div>
-      </div>
+      </HeaderEl>
 
     </Fragment>
   )

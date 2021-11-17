@@ -14,8 +14,8 @@ const Bio = () => {
           Thus, from applying new patterns and being in-sync with the latest technology updates and best practices to trying new frameworks in the same manner with React, React Native and Vue.js.
           <br></br>
           <br></br>
-          As an advocate of the open source environment, I invite you to check out further some of my work in the <a className="bio__hook">projects</a>
-          section, but if you really want to dive deep on how I coded them I strongly recommend visiting my <a className="bio__hook">github</a> page.
+          As an advocate of the open source environment, I invite you to check out further some of my work in the <a className="bio__hook">projects</a> section,
+          but if you really want to dive deep on how I coded them I strongly recommend visiting my <a className="bio__hook">github</a> page.
           <br></br>
 
         </p>
