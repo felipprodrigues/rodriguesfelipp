@@ -1,0 +1,26 @@
+.bio {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+  // background-color: var(--var-white);
+
+  // @media screen and (max-width: $web-up) {
+  //   height: auto;
+  // }
+
+  &__title {
+    font-size: 84px;
+  }
+
+  &__hook {
+    text-decoration: none;
+    // color: $green-christi;
+    transition: all 0.25s linear;
+  }
+
+  &__hook:hover {
+    // color: $green-limeade;
+  }
+}

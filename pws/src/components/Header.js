@@ -1,5 +1,5 @@
-import React, { Fragment }from 'react';
-import '../styles/colors.scss';
+import React, { Fragment } from 'react';
+import colors from './colors';
 import '../styles/breakpoints.scss';
 import '../styles/header.scss';
 import '../styles/inputs.scss';
