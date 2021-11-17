@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import Header from './Header';
+import Bio from './Bio';
 import '../styles/container.scss';
 
 const Container = () => {
   return (
-    <Header />
+    < Fragment >
+      <Header />
+      <Bio />
+    </Fragment >
   )
 }
 
