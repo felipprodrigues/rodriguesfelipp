@@ -1,3 +1,5 @@
+import styled from "styled-components";
+
 export const colors = {
   greenmalachite: '#00ca4e',
   greenlimeade: '#568c06',
@@ -36,4 +38,4 @@ export const colors = {
   // opaquewhite: 'rgba( 255, 255, 255, 0.18 )',
   // scorpion: 'rgba(91, 88, 88, 0.45)',
   // blackopaque: 'rgba(0, 0, 0, 0.1)',
-}
+};

@@ -1,10 +1,11 @@
 import React, { Fragment } from 'react';
-import colors from './colors';
 import '../styles/breakpoints.scss';
 import '../styles/header.scss';
-import '../styles/inputs.scss';
+// import '../styles/inputs.scss';
 import profilePicture from '../assets/profile.png';
 import defs from '../assets/defs.svg'
+import { HeaderEl, HeaderCheckbox, HeaderTitle, HeaderFrame, HeaderImage, HeaderName, HeaderSubtitle } from '../styles/Header.style'
+import { Switch, SwitchCheckMark, SwitchInput, SwitchOverlay, Checkmark } from '../styles/Inputs.style'
 
 const Header = () => {
   function toggleDark() {
@@ -38,33 +39,33 @@ const Header = () => {
   return (
     <Fragment>
 
-      <div className="header">
-        <label for="checkbox" className="switch" onClick={toggleDark}>
-          <input type="checkbox" id="switch__checkbox" className="switch__checkbox"></input>
-          <span className="switch__checkmark checkmark">
-            <svg className="checkmark checkmark__svg">
+      <HeaderEl>
+        <Switch onClick={toggleDark}>
+          <SwitchInput/>
+          <SwitchCheckMark>
+            <Checkmark>
               <use href={defs + '#icon-moon'}></use>
-            </svg>
-            <svg className="checkmark checkmark__svg">
+            </Checkmark>
+            <Checkmark>
               <use href={defs + '#icon-sun'}></use>
-            </svg>
-            <div className="switch__overlay"></div>
-          </span>
-        </label>
+            </Checkmark>
+            <SwitchOverlay />
+          </SwitchCheckMark>
+        </Switch>
         <a className="header__holder" href="#" download="">
           <svg className="header__icon">
 
           </svg>
         </a>
 
-        <div className="header__frame">
-          <img src={profilePicture} className="header__image" alt="profilePicture"></img>
-        </div>
-        <div className="header__title">
-          <h1 className="header__name">Felipe Rodrigues</h1>
-          <span className="header__subtitle">Frontend Developer</span>
-        </div>
-      </div>
+        <HeaderFrame>
+          <HeaderImage src={profilePicture} alt="profilePicture"></HeaderImage>
+        </HeaderFrame>
+        <HeaderTitle>
+          <HeaderName>Felipe Rodrigues</HeaderName>
+          <HeaderSubtitle>Frontend Developer</HeaderSubtitle>
+        </HeaderTitle>
+      </HeaderEl>
 
     </Fragment>
   )
