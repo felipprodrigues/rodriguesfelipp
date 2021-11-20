@@ -1,14 +1,9 @@
-import React, { Fragment } from 'react';
-import Header from './Header';
-import Bio from './Bio';
-import '../styles/container.scss';
+import React from 'react';
+import { StyledContainer } from '../styles/Container.style';
 
 const Container = () => {
   return (
-    < Fragment >
-      <Header />
-      <Bio />
-    </Fragment >
+    <StyledContainer />
   )
 }
 

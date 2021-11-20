@@ -1,11 +1,8 @@
 import React, { Fragment } from 'react';
-import '../styles/breakpoints.scss';
-import '../styles/header.scss';
-// import '../styles/inputs.scss';
 import profilePicture from '../assets/profile.png';
 import defs from '../assets/defs.svg'
-import { HeaderEl, HeaderCheckbox, HeaderTitle, HeaderFrame, HeaderImage, HeaderName, HeaderSubtitle } from '../styles/Header.style'
-import { Switch, SwitchCheckMark, SwitchInput, SwitchOverlay, Checkmark } from '../styles/Inputs.style'
+import { HeaderEl, HeaderTitle, HeaderFrame, HeaderImage, HeaderName, HeaderSubtitle } from '../styles/Header.style'
+import { Switch } from '../styles/Inputs.style'
 
 const Header = () => {
   function toggleDark() {
@@ -41,7 +38,7 @@ const Header = () => {
 
       <HeaderEl>
         <Switch onClick={toggleDark}>
-          <SwitchInput/>
+          {/* <SwitchInput/>
           <SwitchCheckMark>
             <Checkmark>
               <use href={defs + '#icon-moon'}></use>
@@ -50,13 +47,15 @@ const Header = () => {
               <use href={defs + '#icon-sun'}></use>
             </Checkmark>
             <SwitchOverlay />
-          </SwitchCheckMark>
+          </SwitchCheckMark> */}
         </Switch>
-        <a className="header__holder" href="#" download="">
+
+        {/* RESPONSIVE DOWNLOAD BUTTON FOR RESPONSIVE */}
+        {/* <a className="header__holder" href="#" download="">
           <svg className="header__icon">
 
           </svg>
-        </a>
+        </a> */}
 
         <HeaderFrame>
           <HeaderImage src={profilePicture} alt="profilePicture"></HeaderImage>

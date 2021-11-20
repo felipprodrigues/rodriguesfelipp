@@ -1,6 +1,7 @@
-@import "global.scss";
+import { createGlobalStyle } from "styled-components";
 
-*,
+const GlobalStyles = createGlobalStyle`
+  *,
 ::after,
 ::before {
   box-sizing: border-box;
@@ -117,3 +118,14 @@ hr.dark-theme {
   margin: 0;
   width: 1px;
 }
+
+#root {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
+`;
+
+export default GlobalStyles

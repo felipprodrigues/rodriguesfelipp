@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react';
-import '../styles/bio.scss';
 
 const Bio = () => {
   return (
