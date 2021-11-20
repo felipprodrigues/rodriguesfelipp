@@ -1,11 +1,12 @@
 import React, { Fragment } from 'react';
+import { StyleBio, StyleBioTitle } from '../styles/Bio.style';
 
 const Bio = () => {
   return (
     <Fragment>
 
-      <section className="bio">
-        <h2 className="container__title--padded">Hi there!</h2>
+      <StyleBio>
+        <StyleBioTitle>Hi there!</StyleBioTitle>
         <p className="container__text--padded">My name is Felipe Rodrigues, a front-end developer who's always searching for deploying the best of my capabilities.
           <br></br>
           <br></br>
@@ -19,7 +20,7 @@ const Bio = () => {
 
         </p>
 
-      </section >
+      </StyleBio>
 
     </Fragment>
   )
