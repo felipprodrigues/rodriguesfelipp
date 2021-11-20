@@ -1,13 +1,18 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
+import GlobalStyles from './styles/Global.style';
 import Container from './components/Container';
-import './styles/container.scss';
+import Header from './components/Header';
+import Bio from './components/Bio';
+
 
 class App extends Component {
   render() {
     return (
-      <div className="container">
-        <Container />
-      </div>
+      <Fragment>
+        <GlobalStyles />
+        <Header />
+        <Bio />
+      </Fragment>
     )
   }
 }

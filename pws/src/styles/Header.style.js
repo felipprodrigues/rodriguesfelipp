@@ -5,12 +5,6 @@ export const HeaderEl = styled.header`
   display: flex;
   background-color: var(--var-darkest);
   color: var(--var-white);
-
-  &__title,
-  &__frame {
-    display: flex;
-    justify-content: flex-end;
-  }
 `;
 
 export const HeaderCheckbox = styled.label`
@@ -20,34 +14,6 @@ export const HeaderCheckbox = styled.label`
   position: absolute;
   right: 1.5em;
   top: 0.7em;
-
-  & &__checkmark {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    border-radius: 30px;
-    background: #555;
-  }
-
-  #switch__checkbox:checked ~ .switch__checkmark {
-    background-color: #555;
-  }
-
-  & input {
-    position: absolute;
-    width: 75px;
-    height: 35px;
-    opacity: 0;
-    margin: 0;
-    z-index: 999;
-    cursor: pointer;
-  }
-
-  input:checked + .switch__checkmark .switch__overlay {
-    transform: translateX(38px);
-  }
 `;
 
 export const HeaderTitleFrame = styled.div`
