@@ -1,4 +1,5 @@
-import styled from "styled-components"
+import styled from "styled-components";
+import colors from '../styles/Colors';
 
 export const StyleBio = styled.section`
   display: flex;
@@ -13,8 +14,8 @@ export const StyleBioTitle = styled.h1`
   font-size: 84px;
 `
 
-export const StyleBioHook = styled.p`
+export const StyleBioHook = styled.a`
   text-decoration: none;
-  color: $green-christi;
+  color: ${colors.greenchristi};
   transition: all 0.25s linear;
 `

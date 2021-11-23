@@ -3,6 +3,7 @@ import GlobalStyles from './styles/Global.style';
 import Container from './components/Container';
 import Header from './components/Header';
 import Bio from './components/Bio';
+import Resume from './components/Resume';
 
 
 class App extends Component {
@@ -12,6 +13,7 @@ class App extends Component {
         <GlobalStyles />
         <Header />
         <Bio />
+        <Resume />
       </Fragment>
     )
   }
