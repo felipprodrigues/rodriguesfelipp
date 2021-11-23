@@ -18,4 +18,8 @@ export const StyleBioHook = styled.a`
   text-decoration: none;
   color: ${colors.greenchristi};
   transition: all 0.25s linear;
+
+  &:hover {
+    color: ${colors.greenlimeade}
+  }
 `

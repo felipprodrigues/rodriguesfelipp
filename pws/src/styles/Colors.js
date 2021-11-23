@@ -27,13 +27,13 @@ export const Colors = {
   emperor: '#555',
   grayalto: '#d3d3d3',
 
-  // // INPUT OVERLAY
-  // silversand: 'rgba( 182, 190, 190, 0.70 )',
-  // jacksonspurple: 'rgba( 31, 38, 135, 0.37 )',
+  // INPUT OVERLAY
+  silversand: 'rgba( 182, 190, 190, 0.70 )',
+  jacksonspurple: 'rgba( 31, 38, 135, 0.37 )',
+  opaquewhite: 'rgba( 255, 255, 255, 0.18 )',
 
   // // CAROUSEL BUTTON
   // suvagray: 'rgba( 132, 132, 132, 0.1 )',
-  // opaquewhite: 'rgba( 255, 255, 255, 0.18 )',
   // scorpion: 'rgba(91, 88, 88, 0.45)',
   // blackopaque: 'rgba(0, 0, 0, 0.1)',
 };
