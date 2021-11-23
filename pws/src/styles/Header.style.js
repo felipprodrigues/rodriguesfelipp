@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import Inputs from './Inputs.style';
 
 export const HeaderEl = styled.header`
   display: flex;

@@ -1,13 +1,13 @@
 import React, { Fragment } from 'react';
 import profilePicture from '../assets/profile.png';
-import defs from '../assets/defs.svg'
-import { HeaderEl, HeaderTitle, HeaderFrame, HeaderImage, HeaderName, HeaderSubtitle } from '../styles/Header.style'
-import { Switch } from '../styles/Inputs.style'
+import defs from '../assets/defs.svg';
+import { HeaderEl, HeaderTitle, HeaderFrame, HeaderImage, HeaderName, HeaderSubtitle } from '../styles/Header.style';
+import { Switch, SwitchCheckbox, SwitchCheckmark, SwitchCheckMarkSVG, SwitchOverlay } from '../styles/Switch.style';
 
 const Header = () => {
   function toggleDark() {
     let darkMode = localStorage.getItem('darkMode');
-    const darkModeToggle = document.querySelector('.switch');
+    const darkModeToggle = document.querySelector('#switch');
 
     const enableDarkMode = () => {
       document.body.classList.add('darkMode');
@@ -37,7 +37,18 @@ const Header = () => {
     <Fragment>
 
       <HeaderEl>
-        <Switch onClick={toggleDark}>
+        <Switch onClick={toggleDark} for="checkbox" id="switch">
+          <SwitchCheckbox type="checkbox"></SwitchCheckbox>
+          <SwitchCheckmark>
+            <SwitchCheckMarkSVG>
+              <use href={defs + '#icon-moon'}></use>
+            </SwitchCheckMarkSVG>
+            <SwitchCheckMarkSVG>
+              <use href={defs + '#icon-sun'}></use>
+            </SwitchCheckMarkSVG>
+            <SwitchOverlay />
+          </SwitchCheckmark>
+
           {/* <SwitchInput/>
           <SwitchCheckMark>
             <Checkmark>
