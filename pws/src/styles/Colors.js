@@ -2,7 +2,6 @@ export const Colors = {
   greenmalachite: '#00ca4e',
   greenlimeade: '#568c06',
   greenchristi: '#6fb30b',
-  greenlimeade: '#568c06',
   goldsand: '#e5bd83',
   yelloworange: '#ffbd44',
   harvestgold: '#DDB974',

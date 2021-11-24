@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { StyleBio, StyleBioTitle, StyleBioHook } from '../styles/Bio.style';
+import { StyleBio, StyleBioHook } from '../styles/Bio.style';
 import { StyledContainerH2Padded, StyledContainerTextPadded } from '../styles/Container.style'
 
 const Bio = () => {
