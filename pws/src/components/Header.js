@@ -7,7 +7,7 @@ import { Switch, SwitchCheckbox, SwitchCheckmark, SwitchCheckMarkSVG, SwitchOver
 const Header = () => {
   function toggleDark() {
     let darkMode = localStorage.getItem('darkMode');
-    const darkModeToggle = document.querySelector('#switch');
+    const darkModeToggle = document.getElementById('switch');
 
     const enableDarkMode = () => {
       document.body.classList.add('darkMode');
@@ -22,6 +22,13 @@ const Header = () => {
     if (darkMode === 'enabled') {
       enableDarkMode();
     }
+
+    // FIX
+    if (darkModeToggle.defaultChecked === false ){
+      disableDarkMode()
+    } else(
+      enableDarkMode()
+    )
 
     darkModeToggle.addEventListener('click', () => {
       darkMode = localStorage.getItem('darkMode')
@@ -48,17 +55,6 @@ const Header = () => {
             </SwitchCheckMarkSVG>
             <SwitchOverlay />
           </SwitchCheckmark>
-
-          {/* <SwitchInput/>
-          <SwitchCheckMark>
-            <Checkmark>
-              <use href={defs + '#icon-moon'}></use>
-            </Checkmark>
-            <Checkmark>
-              <use href={defs + '#icon-sun'}></use>
-            </Checkmark>
-            <SwitchOverlay />
-          </SwitchCheckMark> */}
         </Switch>
 
         {/* RESPONSIVE DOWNLOAD BUTTON FOR RESPONSIVE */}
