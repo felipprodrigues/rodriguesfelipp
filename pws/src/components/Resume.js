@@ -1,11 +1,23 @@
 import React from "react";
-import { StyledResume, StyledResumeContainer } from '../styles/Resume.style'
-import { StyledAside, StyledAsideList, StyledAsideElements } from '../styles/Aside.style'
+import { StyledResume, StyledResumeContainer } from '../styles/Resume.style';
+import { StyledAside, StyledAsideList, StyledAsideElements, StyledAsideButton, StyledAsideIcon, StyledAsideTooltip } from '../styles/Aside.style';
+import { StyledTabs, StyledTabsHolder, StyledTabsItem, StyledTabsIcon } from '../styles/Tabs.style';
+import { StyledList, StyledListItems } from '../styles/List.style';
+import defs from '../assets/defs.svg';
 
 function Resume() {
   const loopEl = [];
-  for(let i = 0; i < 4; i++) {
-    loopEl.push(<StyledAsideElements />)
+  for(let i = 0; i < 5; i++) {
+    loopEl.push(
+      <StyledAsideElements>
+        <StyledAsideButton>
+          <StyledAsideIcon />
+          <StyledAsideTooltip >
+            Explore
+          </StyledAsideTooltip>
+        </ StyledAsideButton>
+      </StyledAsideElements>
+    )
   }
 
   return (
@@ -16,6 +28,20 @@ function Resume() {
             {loopEl}
           </StyledAsideList>
         </StyledAside>
+        <StyledTabs>
+          <StyledTabsHolder>
+
+          {/* FIX AND LOOP OVER */}
+          <StyledTabsItem>
+            <StyledList>
+              <StyledListItems>Eventene.js</StyledListItems>
+            </StyledList>
+          </StyledTabsItem>
+
+          </StyledTabsHolder>
+
+          <StyledTabsIcon></StyledTabsIcon>
+        </StyledTabs>
       </StyledResumeContainer>
     </StyledResume>
   )

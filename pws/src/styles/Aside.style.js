@@ -40,3 +40,58 @@ export const StyledAsideElements = styled.li`
     fill: white;
   }
 `
+
+export const StyledAsideButton = styled.a`
+  cursor: pointer;
+  padding: 10px;
+  display: inherit;
+  position: relative;
+  transition: all .5s ease-in;
+
+  &:hover > span {
+    display: inline ruby;
+  }
+
+  /* AS CONST BELOW  */
+  /* &--selected svg {
+      fill: white;
+    } */
+`
+
+export const StyledAsideButtonSelected = styled.a`
+  & > svg {
+    fill: white
+  }
+`
+
+export const StyledAsideIcon = styled.svg`
+  max-width: 23px;
+  max-height: 23px;
+`
+
+export const StyledAsideTooltip = styled.span`
+  display: none;
+  left: 57px;
+  top: 10px;
+  color: ${Colors.grayalto};
+  padding: 3px 10px;
+  z-index: 9999;
+  font-size: 14px;
+  position: absolute;
+  background: ${Colors.shark};
+  border: 1px solid ${Colors.tundora};
+
+  &::before {
+    content: '';
+    position: absolute;
+    background: ${Colors.shark};
+    border: 1px solid ${Colors.tundora};
+    width: 10px;
+    height: 10px;
+    left: -6px;
+    top: 5px;
+    transform: rotate(45deg);
+    border-top: transparent;
+    border-right: transparent;
+  }
+`
