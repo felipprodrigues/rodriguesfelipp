@@ -35,6 +35,9 @@ function Resume() {
           <StyledTabsItem>
             <StyledList>
               <StyledListItems>Eventene.js</StyledListItems>
+              <StyledListItems>Camelias.js</StyledListItems>
+              <StyledListItems>Taina.js</StyledListItems>
+              <StyledListItems>Theater.js</StyledListItems>
             </StyledList>
           </StyledTabsItem>
 
